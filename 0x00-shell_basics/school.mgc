@@ -1,3 +1,2 @@
 #!/bin/bash
-touch school.mgc find school.mgc -type f -exec grep -l "neddle text" {} \; -exec file {}
- \; | grep text
+touch school.mgc find . -type f -exec rep -Iq . {} \; -print

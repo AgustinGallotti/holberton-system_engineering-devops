@@ -1,2 +1,2 @@
 #!/bin/bash
--type f -printf /tmp/iamafile
+-printf -type f /tmp/iamafile

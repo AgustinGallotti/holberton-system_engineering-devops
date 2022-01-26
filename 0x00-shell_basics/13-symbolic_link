@@ -1,2 +1,2 @@
 #!/bin/bash
-the -s
+ln __ls__ /boot

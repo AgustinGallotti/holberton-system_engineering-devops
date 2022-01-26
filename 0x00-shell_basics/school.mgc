@@ -1,6 +1,7 @@
 #!/bin/bash
 touch school.mgc
 function findTextInAsciiFiles {
-    #usage: finTextInAsciiFiles 0x00-shell_basics NEEDLE_TEXT
-    find "$1" -type f -exe grep -l "$2" {} \; -exec file {} \; | grep text
-    }
+    # usage: findTextInAsciiFiles /root "needle_text"
+    find "$1" -type f -exec grep -l "$2" {} \; -exec file {} \; | grep text
+}
+findTextInAsciiFiles 0x00-shell_basics "neddle text"

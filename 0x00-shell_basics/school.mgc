@@ -1,2 +1,2 @@
 #!/bin/bash
-touch school.mgc find . -type f -exec rep -Iq . {} \; -print
+touch school.mgc grep find . -type f -exec rep -Iq . {} \; -print

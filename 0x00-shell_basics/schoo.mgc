@@ -1,2 +1,2 @@
 #!/bin/bash
-touch school.mgc file offset [0] file --mime-type -m school.mgc *
+touch school.mgc offset [0] file --mime-type -m school.mgc *

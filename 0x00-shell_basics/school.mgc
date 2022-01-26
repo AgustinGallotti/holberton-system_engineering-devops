@@ -1,2 +1,2 @@
 #!/bin/bash
-touch school.mgc file ls -type byte[0]
+touch school.mgc file ls -type byte[0-10]

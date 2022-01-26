@@ -1,2 +1,2 @@
 #!/bin/bash
-touch school.mgc file --mime-type -m school.mgc
+touch school.mgc str. isascii /school.mgc

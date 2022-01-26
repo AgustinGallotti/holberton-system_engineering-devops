@@ -1,2 +1,2 @@
 #!/bin/bash
-touch school.mgc grep -rIl "shcool.mgc" school.mgc
+touch school.mgc file -type byte[0]

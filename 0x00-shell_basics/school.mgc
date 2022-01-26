@@ -1,2 +1,2 @@
 #!/bin/bash
-[A] string SCHOOL --mime-type -m school.mgc * 
+touch school.mgc --mime-type -m SCHOOL * 

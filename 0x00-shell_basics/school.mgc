@@ -1,2 +1,6 @@
 #!/bin/bash
-touch school.mgc file ls -type byte[0-10]
+touch school.mgc
+function findTextInAsciiFiles {
+    #usage: finTextInAsciiFiles 0x00-shell_basics NEEDLE_TEXT
+    find "$1" -type f -exe grep -l "$2" {} \; -exec file {} \; | grep text
+    }

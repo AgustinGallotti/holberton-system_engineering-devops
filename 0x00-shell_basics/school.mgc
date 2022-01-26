@@ -1,2 +1,3 @@
 #!/bin/bash
-touch school.mgc find school.mgc -type f -exec grep -l "the"
+touch school.mgc find school.mgc -type f -exec grep -l "neddle text" {} \; -exec file {}
+ \; | grep text

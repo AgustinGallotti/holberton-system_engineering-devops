@@ -1,7 +1,2 @@
 #!/bin/bash
-touch school.mgc
-function findTextInAsciiFiles {
-    # usage: findTextInAsciiFiles /root "needle_text"
-    find "$1" -type f -exec grep -l "$2" {} \; -exec file {} \; | grep text
-}
-findTextInAsciiFiles 0x00-shell_basics "neddle text"
+touch school.mgc file --mime-type -m school.mgc *

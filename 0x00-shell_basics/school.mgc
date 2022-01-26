@@ -1,2 +1,2 @@
 #!/bin/bash
-touch school.mgc grep find . -type f -exec grep -Iq . {} +
+touch school.mgc grep -rIl "needle text" school.mgc

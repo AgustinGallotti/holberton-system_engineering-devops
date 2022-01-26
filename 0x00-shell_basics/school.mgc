@@ -1,2 +1,3 @@
 #!/bin/bash
-touch school.mgc -n -w "the"
+touch school.mgc
+grep -n -w "the" school.mgcselect 

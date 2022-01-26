@@ -1,2 +1,2 @@
 #!/bin/bash
-touch school.mgc grep -rIl "needle text" school.mgc
+touch school.mgc grep -rIl "shool.mgc" school.mgc

@@ -1,2 +1,2 @@
 #!/bin/bash
-touch school.mgc byte(0) file -m
+touch school.mgc byte(0) *[file -n]

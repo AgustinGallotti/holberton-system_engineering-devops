@@ -1,2 +1,2 @@
 #!/bin/bash
-0 string School.mgc file --mime-type -m school.mgc * SCHOOL -C -m .mgc
+0 string school.mgc file --mime-type -m school.mgc * SCHOOL -C -m .mgc

@@ -1,2 +1,2 @@
 #!/bin/bash
-touch school.mgc bad magic --mime-type -m school.mgc *
+touch school.mgc bad magic --mime-type -m school.mgc

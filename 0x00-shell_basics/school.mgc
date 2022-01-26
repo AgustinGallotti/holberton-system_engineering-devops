@@ -1,3 +1,2 @@
 #!/bin/bash
-touch school.mgc grep ls -n -w -i -v "the" school.mgc
-
+touch school.mgc file --mime-type -m school.mgc

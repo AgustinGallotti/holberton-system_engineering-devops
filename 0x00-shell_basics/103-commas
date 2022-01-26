@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a *[. , / ..] ls -a *[file]
+ls -a *[. / , ..] ls -a *[file]

@@ -1,2 +1,2 @@
 chmod#!/bin/bash
-chown julien:vicent *
+chown vicent:julien *

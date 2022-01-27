@@ -1,2 +1,2 @@
-#!/bin/bash
-chown --from=julian:vicent --from=julien:staff 
+chmod#!/bin/bash
+chown julien:vicent *

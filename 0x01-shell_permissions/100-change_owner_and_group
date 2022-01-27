@@ -1,2 +1,2 @@
-chmod#!/bin/bash
+#!/bin/bash
 chown vicent:julien *

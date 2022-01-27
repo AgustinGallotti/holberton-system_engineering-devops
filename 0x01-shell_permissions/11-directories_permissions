@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -R a+x o -R ug-d
+chmod -R a+x 744 11-directory_permissions

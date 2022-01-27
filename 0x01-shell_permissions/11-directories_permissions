@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -R a+x 744
+chmod 744 -R a+x

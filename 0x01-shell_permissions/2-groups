@@ -1,0 +1,2 @@
+#!/bin/bash
+less /root/0x02-shell_permissions/2-groups

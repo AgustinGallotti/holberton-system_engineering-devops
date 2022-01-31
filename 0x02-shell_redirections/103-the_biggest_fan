@@ -1,2 +1,2 @@
 #!/bin/bash
-103-the_biggest_fan < log
+103-the_biggest_fan < nasa_19950801.tsv

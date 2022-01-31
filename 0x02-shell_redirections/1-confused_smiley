@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "\U+1F928"
+echo "\U+1F928"

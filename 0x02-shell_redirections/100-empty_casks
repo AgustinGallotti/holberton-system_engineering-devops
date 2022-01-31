@@ -1,2 +1,2 @@
 #!/bin/bash
-find -l /n -a -d */
+find . -type f | wc -l 

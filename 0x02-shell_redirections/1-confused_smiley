@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -en '\xf0\x9f\x98\x80'
+echo -e '\xf0\x9f\x98\x80\x0a\00'

@@ -1,2 +1,2 @@
 #!/bin/bash
-103-the_biggest_fan < nasa_19950801.tsv
+tail -n +2 | cut -f1 | sort | uniq -c | sort -nr | head -11 | tr -s ' ' | cut -d' ' -f3

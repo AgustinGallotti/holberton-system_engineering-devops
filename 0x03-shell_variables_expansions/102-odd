@@ -1,2 +1,2 @@
 #!/bin/bash
-oerl -ne 'print if $. % 5 == 0;' infile > outfile
+perl -ne 'print if $. % 5 == 0;' infile > outfile

@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth l -type d | wc -l
+tree | tail -l

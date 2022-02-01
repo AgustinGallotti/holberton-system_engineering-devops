@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..z} [-v o]
+echo {a..z} [-v o] | wc -w

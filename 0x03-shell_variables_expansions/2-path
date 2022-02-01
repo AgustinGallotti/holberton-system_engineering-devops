@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -d | export $PATH="root/action:$PATH"
+export PATH="root/action:$PATH"

@@ -1,2 +1,2 @@
 #!/bin/bash
-echo hellouser=$USER myvariable=$( howami )
+echo "hellouser"=$USER myvariable=$( howami )

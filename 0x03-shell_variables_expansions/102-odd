@@ -1,4 +1,2 @@
 #!/bin/bash
-while (<>) {
-	  print  if $. % 3 == 1;
-	  }
+while (<>) {print  if $. % 3 == 1}

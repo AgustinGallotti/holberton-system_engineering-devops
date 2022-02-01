@@ -1,0 +1,2 @@
+#!/bin/bash
+for w in {a,A}{z,Z};do echo $w;done

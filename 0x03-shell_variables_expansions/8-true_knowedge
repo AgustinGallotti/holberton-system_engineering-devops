@@ -1,2 +1,2 @@
 #!/bin/bash
-export TRUEKNOWLEDGE=1209 | export var=128 | sum=$(($var + $TRUEKNOWEDGE)) | echo $sum	 
+export TRUEKNOWLEDGE=1209 | export var=128 | sum=$(($var + $TRUEKNOWEDGE)) | echo $sum | cat -e	 

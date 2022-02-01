@@ -1,2 +1,4 @@
 #!/bin/bash
-while read line; do echo "$line"; ((lines++ % 2)) && echo; done
+while (<>) {
+	  print  if $. % 3 == 1;
+	  }

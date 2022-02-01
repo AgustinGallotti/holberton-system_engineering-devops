@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "obase=;$ip1" | bc
+ibase=10 obase=2

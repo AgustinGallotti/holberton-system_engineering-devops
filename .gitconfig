@@ -1,0 +1,8 @@
+[user]
+	name = AgustinGallotti
+	mail = AgustinGallotti23@gmail.com
+	email = AgustinGallotti23@gmail.com
+[credential]
+	helper = store
+[core]
+	excludesFile = ~/.gitignore

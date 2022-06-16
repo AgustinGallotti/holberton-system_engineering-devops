@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #bash script to display numbers from 1 ot 20
 # and add string to number 4, 9, and 17
-n=0
+n=1
 
 while [ $n -lt '21' ]
 do 

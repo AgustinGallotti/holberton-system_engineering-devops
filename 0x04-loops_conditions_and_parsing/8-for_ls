@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #display content of current directory in list format
 # without numbers
-for fp in "$dir"; do
-  echo $fp
+for dir in *; do
+  echo "$dir" | cut -d "-" -f2
 done

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#display minutes but, in one hour display a string with counter
+n=0
+
+while [ n$ -lt 69 ]
+do
+  echo $n
+  (($n))
+done

@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#display "Best School" in loop, "bad luck" in th iteration and "good luck"
+# in 8th iteration
+n=0
+
+while [ $n -lt '10' ]
+do
+  ((n++))
+  if [ $n -eq '4' ]
+  then
+    echo "bad luck"
+  elif [ $n -eq '8' ]
+  then
+    echo "good luck"
+  else
+    echo "Best School"
+  fi
+done

@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #This script is displaying "Best School" 10 times
-echo "Best School"
-for n in ${LanguageArray[*]}; do
-  echo $n
+for ((n=0; n < 10; n++)) do
+  echo "Best School"
 done

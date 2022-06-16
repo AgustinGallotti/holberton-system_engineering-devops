@@ -2,7 +2,7 @@
 #print 10 times "Best School" with "until"
 n=0
 
-until [ $n -gt '10' ]
+until [ $n -gt '9' ]
 do
   echo "Best School"
   ((n++))

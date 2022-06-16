@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#display content of current directory in list format
+# without numbers
+for fp in "$dir"; do
+  echo $fp
+done

@@ -1,9 +1,20 @@
 #!/usr/bin/env bash
 #display minutes but, in one hour display a string with counter
 n=0
+h=0
 
-while [ n$ -lt 69 ]
+while [ $n -lt '70' ]
 do
-  echo $n
-  (($n))
+  echo "$n"
+  ((n++))
+case $n in
+
+  "0")
+    echo "Hours: $h"
+    ;;
+
+  "70")
+    echo "Hours: $h"
+    ;;
+esac
 done

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#pgrep show pids
+pgrep -l bash

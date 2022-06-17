@@ -6,5 +6,5 @@ do
 	username=$(echo "$file" | cut -d ":" -f1)
 	userid=$(echo "$file" | cut -d ":" -f3)
 	homedir=$(echo "$file" | cut -d ":" -f6)
-	echo "$username:$userid:homedir"
-done < FILE
+	echo "$username:$userid:$homedir"
+done < $FILE

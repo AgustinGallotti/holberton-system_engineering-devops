@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #trap to catch signal, SIGINT to interrupt from keyboard
-trap "echo I am invencible!!!" SIGINT SIGTERM
+trap "echo I am invincible!!!" SIGINT SIGTERM
 while true; do
   echo To infinity and beyond
   sleep 2

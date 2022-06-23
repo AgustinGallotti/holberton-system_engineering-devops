@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+"""ping to troubleshoot connectivity, reachability, and name resolution"""
+"""test both the computer name and the IP address of the computer"""
+if [ "$1" != ""  ]; then
+  """display the IP five times"""
+  ping -c 5 "$1"
+else
+  echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+fi

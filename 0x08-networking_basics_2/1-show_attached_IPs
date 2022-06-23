@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-ifconfig | grep "inet addr" | cut -d ":" -f2 | cut -d " " -f1
+/sbin/ifconfig eth0 | grep 'inet' | awk '{ print $4}'

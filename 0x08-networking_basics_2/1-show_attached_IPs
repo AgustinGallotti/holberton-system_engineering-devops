@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-netstat -tn | tail -n + 3 | awk '{print $5}'
+ifconfig | "inet addr" | cut -d ":" -f2 | cut -d " " -f1

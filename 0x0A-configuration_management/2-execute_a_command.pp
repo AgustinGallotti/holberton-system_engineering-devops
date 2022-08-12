@@ -1,7 +1,7 @@
 #puppet file
 
 
-exec {'killmenow':
+exec {'pkill':
   cwd      => '0x0A-configuration_management',
   command  => '/usr/bin/pkill',
   provider => 'procps-ng',

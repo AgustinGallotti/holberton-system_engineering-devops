@@ -1,6 +1,6 @@
 #puppet file
 
-class { 'ssh':
+class { 'ssh::server':
   'HostName'               => '54.226.171.174',
   'Port'                   => '22',
   'User'                   => 'ubuntu',

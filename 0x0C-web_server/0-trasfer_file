@@ -1,0 +1,6 @@
+#!/usr/ibn/env bash
+a = 'Usage: 0-tranfser_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY'
+if (args in scp == 4)
+  scp 0-transfer_file ubuntu@35.173.129.145 ~/.ssh/id_rsa
+else:
+  print(a)

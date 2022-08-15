@@ -1,2 +1,8 @@
 #!/usr/bin/env bash
-ssh -i ~/.ssh/school ubuntu@35.173.129.145
+Host 4393-web-01
+			HostName 54.226.171.174
+			Port 22
+			User ubuntu
+			IdentityFile ~/.ssh/school
+			IdentityFile ~/.ssh/id_rsa.pub
+			PasswordAuthentication no

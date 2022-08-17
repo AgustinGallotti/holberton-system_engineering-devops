@@ -2,5 +2,5 @@
 #Setup, default path, restart when making configurations updates and -y to auto
 sudo apt-get -y update
 sudo apt-get -y install nginx
-echo "Hello World" | sudo tee /var/www/html/index.nginx-debian.html
+echo "Hello World" > /var/www/html/index.nginx-debian.html
 sudo service nginx restart

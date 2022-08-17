@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-Host 4393-web-01
-			HostName 54.226.171.174
-			Port 22
-			User ubuntu
-			IdentityFile ~/.ssh/school
-			IdentityFile ~/.ssh/id_rsa.pub
-			PasswordAuthentication no
+Host 4394-web-01
+      HostName 35.173.129.145
+      Port 22
+      User ubuntu
+      IdentityFile ~/.ssh/school
+      IdentityFile ~/.ssh/known_hosts
+      PasswordAuthentication no

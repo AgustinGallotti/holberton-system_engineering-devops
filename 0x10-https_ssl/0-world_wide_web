@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#configure the domain zone
+# configure the domain zone
 if [ -z "$2" ]
   then
     SUBDOM=("www" "lb-01" "web-01" "web-02")

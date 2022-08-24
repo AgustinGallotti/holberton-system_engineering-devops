@@ -1,4 +1,4 @@
-#!bin/user/env bash
+#!/usr/bin/env bash
 #configure the domain zone
 if [ -z "$2" ]
   then

@@ -42,8 +42,8 @@ backend web_servers
   # servers that fulfill the requests
   mode http
   balance roundrobin
-  server web-01 34.201.147.121:80
-  server web-02 34.207.82.133:80
+  server 4394-web-01 34.201.147.121:80
+  server 4394-web-02 34.207.82.133:80
 
 listen stats
   # to serve up the HAProxy Stats page

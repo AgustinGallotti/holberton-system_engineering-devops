@@ -1,9 +1,3 @@
-#!/usr/bin/env bash
-# configure LE to haproxy
-# to test our configuration changes by calling
-#   the haproxy executable with the "-c"parameter, such as:
-#     haproxy -c -f /etc/hapee-1.8/hapee-lb.cfg
-
 global
   # global settings here
   maxconn 50000

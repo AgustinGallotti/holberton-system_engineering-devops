@@ -14,7 +14,7 @@ global
   nbproc 2
   nbthread 4
   cpu-map auto:1/1-4 0-3
-  daemons
+  daemon
   
 defaults
   # defaults here
@@ -24,15 +24,36 @@ defaults
   log global
   mode http
   option httplog
-  macconn 3000
+  maxconn 3000
+	errorfile 400 /etc/haproxy/errors/400.http
+	errorfile 403 /etc/haproxy/errors/403.http
+	errorfile 408 /etc/haproxy/errors/408.http
+	errorfile 500 /etc/haproxy/errors/500.http
+	errorfile 502 /etc/haproxy/errors/502.http
+	errorfile 503 /etc/haproxy/errors/503.http
+	errorfile 504 /etc/haproxy/errors/504.http
 
-frontend
+frontend local_https
   # a frontend that accepts request from clients
-  bind IP:port
-  bind IP:port ssl crt /etc/ssl/certs/theancientwhispers.tech
+  bind *:443 ssl crt /etc/ssl/certs/theancientwhispers.tech
   http-request redirect sheme https unless { ssl_fc }
-  use_backend api_servers if {path_beg /api/ }
   default_backend web_servers
 
-backend
+frontend local_servers
+  bind *:80
+  mode http
+  default_backend web_servers
+
+backend web_servers
   # servers that fulfill the requests
+  mode http
+  balance roundrobin
+  server web-01 34.201.147.121:80
+  server web-02 34.207.82.133:80
+
+listen stats
+  # to serve up the HAProxy Stats page
+  bind *:433
+  stats enable
+  stats uri /monitor
+  stats refresh 5s

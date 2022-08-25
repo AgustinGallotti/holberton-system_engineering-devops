@@ -26,7 +26,7 @@ defaults
 	    errorfile 504 /etc/haproxy/errors/504.http
 
 frontend local_https
-      bind *:443 ssl crt /etc/ssl/theancientwhispers.tech
+      bind *:443 ssl crt /etc/ssl/theancientwhispers.tech.pem
       http-request redirect sheme https unless { ssl_fc }
       default_backend web_servers
 

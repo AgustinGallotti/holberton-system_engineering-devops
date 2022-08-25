@@ -29,7 +29,7 @@ defaults
 
 frontend local_https
   # a frontend that accepts request from clients
-  bind *:443 ssl crt /etc/ssl/certs/theancientwhispers.tech
+  bind *:443 ssl crt /etc/ssl/theancientwhispers.tech
   http-request redirect sheme https unless { ssl_fc }
   default_backend web_servers
 

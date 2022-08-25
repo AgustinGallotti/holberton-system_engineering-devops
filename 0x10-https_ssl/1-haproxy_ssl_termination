@@ -1,53 +1,48 @@
 global
-  # global settings here
-  maxconn 50000
-  log /dev/log local0
-  user haproxy
-  group haproxy
-  stats socket /run/haproxy/admin.sock user haproxy group haproxy
-  nbproc 2
-  nbthread 4
-  cpu-map auto:1/1-4 0-3
-  daemon
+      maxconn 50000
+      log /dev/log local0
+      user haproxy
+      group haproxy
+      stats socket /run/haproxy/admin.sock user haproxy group haproxy
+      nbproc 2
+      nbthread 4
+      cpu-map auto:1/1-4 0-3
+      daemon
   
 defaults
-  # defaults here
-  timeout connect 10s
-  timeout client 30s
-  timeout server 30s
-  log global
-  mode http
-  option httplog
-  maxconn 3000
-	errorfile 400 /etc/haproxy/errors/400.http
-	errorfile 403 /etc/haproxy/errors/403.http
-	errorfile 408 /etc/haproxy/errors/408.http
-	errorfile 500 /etc/haproxy/errors/500.http
-	errorfile 502 /etc/haproxy/errors/502.http
-	errorfile 503 /etc/haproxy/errors/503.http
-	errorfile 504 /etc/haproxy/errors/504.http
+      timeout connect 10s
+      timeout client 30s
+      timeout server 30s
+      log global
+      mode http
+      option httplog
+      maxconn 3000
+	    errorfile 400 /etc/haproxy/errors/400.http
+	    errorfile 403 /etc/haproxy/errors/403.http
+	    errorfile 408 /etc/haproxy/errors/408.http
+	    errorfile 500 /etc/haproxy/errors/500.http
+	    errorfile 502 /etc/haproxy/errors/502.http
+	    errorfile 503 /etc/haproxy/errors/503.http
+	    errorfile 504 /etc/haproxy/errors/504.http
 
 frontend local_https
-  # a frontend that accepts request from clients
-  bind *:443 ssl crt /etc/ssl/theancientwhispers.tech
-  http-request redirect sheme https unless { ssl_fc }
-  default_backend web_servers
+      bind *:443 ssl crt /etc/ssl/theancientwhispers.tech
+      http-request redirect sheme https unless { ssl_fc }
+      default_backend web_servers
 
 frontend local_servers
-  bind *:80
-  mode http
-  default_backend web_servers
+      bind *:80
+      mode http
+      default_backend web_servers
 
 backend web_servers
-  # servers that fulfill the requests
-  mode http
-  balance roundrobin
-  server 4394-web-01 34.201.147.121:80
-  server 4394-web-02 34.207.82.133:80
+      mode http
+      balance roundrobin
+      server 4394-web-01 34.201.147.121:80
+      server 4394-web-02 34.207.82.133:80
 
 listen stats
-  # to serve up the HAProxy Stats page
-  bind *:433
-  stats enable
-  stats uri /monitor
-  stats refresh 5s
+      bind *:433
+      stats enable
+      stats uri /monitor
+      stats refresh 5s

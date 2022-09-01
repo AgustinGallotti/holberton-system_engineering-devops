@@ -1,0 +1,5 @@
+sudo ufw default deny incoming
+sudo ufw allow 2222/TCP
+sudo ufw allow 8080/TCP
+sudo ufw allow 443/TCP
+sudo ufw enable -y
